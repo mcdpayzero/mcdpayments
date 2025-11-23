@@ -17,6 +17,7 @@
     <nav class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
       <div class="text-3xl font-bold text-primary">MCD Payments</div>
       <ul class="flex flex-wrap justify-center gap-6 text-lg">
+        <li><a href="#calculator" class="block py-2">Calculator</a></li>
         <li><a href="#services" class="hover:text-primary transition">Services</a></li>
         <li><a href="services.html" class="hover:text-primary transition">Products</a></li>
         <li><a href="merchant-application.html" class="hover:text-primary transition">Apply Now</a></li>
@@ -34,6 +35,34 @@
       <div class="flex flex-col sm:flex-row gap-6 justify-center">
         <a href="merchant-application.html" class="bg-accent text-white px-10 py-5 rounded-lg text-xl font-bold hover:bg-accent-hover shadow-glow transition">Apply in 5 Minutes</a>
         <a href="services.html" class="bg-white/20 backdrop-blur px-10 py-5 rounded-lg text-xl font-bold hover:bg-white/30 transition">See Pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero + Calculator -->
+  <section class="gradient-hero text-white py-24 px-6 text-center">
+    <div class="container mx-auto max-w-5xl">
+      <h1 class="text-5xl md:text-7xl font-bold mb-6">Stop Overpaying on Processing</h1>
+      <p class="text-2xl mb-12">See how much you’ll save with MCD Payments in 10 seconds</p>
+
+      <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 max-w-2xl mx-auto">
+        <form id="savings-calculator" class="space-y-6 text-left">
+          <div>
+            <label class="text-lg block mb-2">Monthly Processing Volume ($)</label>
+            <input type="number" id="monthly-volume" placeholder="50,000" required class="w-full px-4 py-3 rounded-lg text-black text-xl">
+          </div>
+          <div>
+            <label class="text-lg block mb-2">Current Total Fees ($)</label>
+            <input type="number" step="0.01" id="monthly-fees" placeholder="1,500" required class="w-full px-4 py-3 rounded-lg text-black text-xl">
+          </div>
+          <button type="submit" class="w-full bg-accent text-white py-4 rounded-lg text-xl font-bold hover:bg-accent/90">Calculate Savings</button>
+        </form>
+
+        <div id="results-output" class="hidden mt-8 text-left space-y-4 bg-white/20 backdrop-blur p-6 rounded-xl">
+          <div><span class="font-bold">Your Current Rate:</span> <span id="current-rate" class="text-3xl font-bold"></span></div>
+          <div><span class="font-bold">Monthly Savings with MCD:</span> <span id="monthly-savings" class="text-3xl font-bold text-green-300"></span></div>
+          <div><span class="font-bold">Annual Savings:</span> <span id="annual-savings" class="text-3xl font-bold text-green-300"></span></div>
+        </div>
       </div>
     </div>
   </section>
@@ -78,4 +107,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
