@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCD Payments - Low Rates, No Hidden Fees</title>
+  <meta name="description" content="Central Georgia's trusted merchant services provider. Save on credit card processing with transparent pricing and Quickvee POS systems.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { primary: 'hsl(var(--primary))', accent: 'hsl(var(--accent))' } } } }
+  </script>
+</head>
+<body class="bg-background text-foreground">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-card/95 backdrop-blur-md shadow-md border-b border-border/20">
+    <nav class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-3xl font-bold text-primary">MCD Payments</div>
+      <ul class="flex flex-wrap justify-center gap-6 text-lg">
+        <li><a href="#services" class="hover:text-primary transition">Services</a></li>
+        <li><a href="services.html" class="hover:text-primary transition">Products</a></li>
+        <li><a href="merchant-application.html" class="hover:text-primary transition">Apply Now</a></li>
+        <li><a href="contact.html" class="hover:text-primary transition">Contact</a></li>
+      </ul>
+      <a href="tel:+13055550123" class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary-hover transition font-semibold">Call (678) 304-9696</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="gradient-hero text-white py-24 px-4 text-center">
+    <div class="container mx-auto max-w-4xl">
+      <h1 class="text-5xl md:text-7xl font-bold mb-6">Save Thousands on Processing Fees</h1>
+      <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Transparent rates starting at 0.10% + $0.10 • Next-day funding • No hidden fees • Free Quickvee POS options</p>
+      <div class="flex flex-col sm:flex-row gap-6 justify-center">
+        <a href="merchant-application.html" class="bg-accent text-white px-10 py-5 rounded-lg text-xl font-bold hover:bg-accent-hover shadow-glow transition">Apply in 5 Minutes</a>
+        <a href="services.html" class="bg-white/20 backdrop-blur px-10 py-5 rounded-lg text-xl font-bold hover:bg-white/30 transition">See Pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid (2x2) -->
+  <section id="services" class="py-20 px-4 bg-secondary-muted">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12">Our Core Services</h2>
+      <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+        <div class="bg-card p-8 rounded-xl shadow-lg hover:shadow-xl transition text-center">
+          <h3 class="text-2xl font-bold mb-4">Credit Card Processing</h3>
+          <p class="text-muted-foreground mb-6">Lowest interchange-plus rates in Central Georgia. No junk fees, no contracts, next-day deposits.</p>
+          <a href="services.html" class="text-accent font-bold hover:underline">Learn More →</a>
+        </div>
+        <div class="bg-card p-8 rounded-xl shadow-lg hover:shadow-xl transition text-center">
+          <h3 class="text-2xl font-bold mb-4">Quickvee POS Systems</h3>
+          <p class="text-muted-foreground mb-6">Free terminals & software for qualified merchants. Cloud-based, offline mode, 24/7 support.</p>
+          <a href="services.html#products" class="text-accent font-bold hover:underline">Compare Systems →</a>
+        </div>
+        <div class="bg-card p-8 rounded-xl shadow-lg hover:shadow-xl transition text-center">
+          <h3 class="text-2xl font-bold mb-4">Restaurant Solutions</h3>
+          <p class="text-muted-foreground mb-6">QR menus, kitchen displays, online ordering integration — built for QSR & full-service.</p>
+          <a href="services.html" class="text-accent font-bold hover:underline">Restaurant Plans →</a>
+        </div>
+        <div class="bg-card p-8 rounded-xl shadow-lg hover:shadow-xl transition text-center">
+          <h3 class="text-2xl font-bold mb-4">Retail & E-Commerce</h3>
+          <p class="text-muted-foreground mb-6">In-store, online, mobile — one low rate across all channels with instant payouts.</p>
+          <a href="services.html" class="text-accent font-bold hover:underline">E-Commerce Rates →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-primary-foreground py-10 px-4">
+    <div class="container mx-auto text-center">
+      <p class="text-2xl font-bold mb-2">MCD Payments</p>
+      <p>Central Georgia's Trusted Merchant Services Provider Since 2015</p>
+      <p class="mt-4">&copy; 2025 MCD Payments. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

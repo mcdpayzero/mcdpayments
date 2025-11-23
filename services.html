@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services & Products - MCD Payments</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { primary: 'hsl(var(--primary))', accent: 'hsl(var(--accent))' } } } }</script>
+</head>
+<body class="bg-background text-foreground">
+  <!-- Same header as index.html -->
+  <header class="sticky top-0 z-50 bg-card/95 backdrop-blur-md shadow-md border-b border-border/20">
+    <nav class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-3xl font-bold text-primary">MCD Payments</div>
+      <ul class="flex flex-wrap justify-center gap-6 text-lg">
+        <li><a href="index.html" class="hover:text-primary transition">Home</a></li>
+        <li><a href="services.html" class="hover:text-primary transition font-bold">Services</a></li>
+        <li><a href="#products" class="hover:text-primary transition">Products</a></li>
+        <li><a href="merchant-application.html" class="hover:text-primary transition">Apply Now</a></li>
+      </ul>
+      <a href="tel:+13055550123" class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary-hover font-semibold">Call (678) 304-9696</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="gradient-hero text-white py-24 px-4 text-center">
+    <div class="container mx-auto max-w-4xl">
+      <h1 class="text-5xl md:text-7xl font-bold mb-6">Transparent Pricing. No Games.</h1>
+      <p class="text-2xl">Rates as low as 0.10% + $0.10 • Free Quickvee POS • Next-day funding</p>
+    </div>
+  </section>
+
+  <!-- 2x2 Services Grid -->
+  <section class="py-20 px-4">
+    <div class="container mx-auto max-w-6xl">
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="bg-card p-10 rounded-2xl shadow-xl text-center">
+          <h3 class="text-3xl font-bold mb-6">Credit Card Processing</h3>
+          <ul class="text-left space-y-4 text-lg mb-8">
+            <li>✓ Interchange-plus pricing</li>
+            <li>✓ No monthly fees</li>
+            <li>✓ Next-day funding (even weekends)</li>
+            <li>✓ Free terminal or $0 lease</li>
+          </ul>
+          <a href="merchant-application.html" class="bg-accent text-white px-8 py-4 rounded-lg text-xl font-bold hover:bg-accent-hover">Get Started</a>
+        </div>
+        <div class="bg-card p-10 rounded-2xl shadow-xl text-center">
+          <h3 class="text-3xl font-bold mb-6">Quickvee POS Systems</h3>
+          <ul class="text-left space-y-4 text-lg mb-8">
+            <li>✓ Free hardware for qualified merchants</li>
+            <li>✓ Cloud + offline mode</li>
+            <li>✓ Built-in online ordering</li>
+            <li>✓ 24/7 local support</li>
+          </ul>
+          <a href="#products" class="bg-primary text-white px-8 py-4 rounded-lg text-xl font-bold hover:bg-primary-hover">Compare POS</a>
+        </div>
+        <div class="bg-card p-10 rounded-2xl shadow-xl text-center">
+          <h3 class="text-3xl font-bold mb-6">Restaurant Solutions</h3>
+          <ul class="text-left space-y-4 text-lg mb-8">
+            <li>✓ QR code menus & payments</li>
+            <li>✓ Kitchen display system</li>
+            <li>✓ Delivery app integrations</li>
+            <li>✓ Tip pooling & reporting</li>
+          </ul>
+          <a href="merchant-application.html" class="bg-accent text-white px-8 py-4 rounded-lg text-xl font-bold">Restaurant Rates</a>
+        </div>
+        <div class="bg-card p-10 rounded-2xl shadow-xl text-center">
+          <h3 class="text-3xl font-bold mb-6">Retail & E-Commerce</h3>
+          <ul class="text-left space-y-4 text-lg mb-8">
+            <li>✓ Same low rate online & in-store</li>
+            <li>✓ Shopify, WooCommerce plugins</li>
+            <li>✓ Mobile card readers</li>
+            <li>✓ Instant payout options</li>
+          </ul>
+          <a href="merchant-application.html" class="bg-accent text-white px-8 py-4 rounded-lg text-xl font-bold">Apply Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quickvee vs Clover Comparison Table -->
+  <section id="products" class="py-20 px-4 bg-secondary-muted">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12">Quickvee vs Clover</h2>
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-card rounded-xl shadow-lg">
+          <thead class="bg-primary text-white">
+            <tr>
+              <th class="p-6 text-left">Feature</th>
+              <th class="p-6 text-center">Quickvee POS</th>
+              <th class="p-6 text-center">Clover</th>
+            </tr>
+          </thead>
+          <tbody class="text-lg">
+            <tr class="border-b"><td class="p-6">Free Hardware</td><td class="p-6 text-center text-green-600 font-bold">YES</td><td class="p-6 text-center">No</td></tr>
+            <tr class="border-b"><td class="p-6">Offline Mode</td><td class="p-6 text-center text-green-600 font-bold">YES</td><td class="p-6 text-center">Limited</td></tr>
+            <tr class="border-b"><td class="p-6">Built-in Online Ordering</td><td class="p-6 text-center text-green-600 font-bold">YES</td><td class="p-6 text-center">Extra cost</td></tr>
+            <tr><td class="p-6">Local 24/7 Support</td><td class="p-6 text-center text-green-600 font-bold">YES</td><td class="p-6 text-center">No</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (same as index) -->
+  <footer class="bg-primary text-primary-foreground py-10 px-4">
+    <div class="container mx-auto text-center">
+      <p class="text-2xl font-bold mb-2">MCD Payments</p>
+      <p>Central Georgia's Trusted Merchant Services Provider Since 2015</p>
+      <p class="mt-4">© 2025 MCD Payments. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
