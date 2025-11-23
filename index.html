@@ -21,10 +21,20 @@
         <li><a href="#services" class="hover:text-primary transition">Services</a></li>
         <li><a href="services.html" class="hover:text-primary transition">Products</a></li>
         <li><a href="merchant-application.html" class="hover:text-primary transition">Apply Now</a></li>
+        <li><a href="about.html" class="hover:text-primary transition">About</a></li>
         <li><a href="contact.html" class="hover:text-primary transition">Contact</a></li>
       </ul>
       <a href="tel:+13055550123" class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary-hover transition font-semibold">Call (678) 304-9696</a>
     </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <ul class="flex flex-col text-center py-4 gap-4 text-lg">
+        <li><a href="#calculator" class="block py-2">Calculator</a></li>
+        <li><a href="services.html" class="block py-2">Services</a></li>
+        <li><a href="about.html" class="block py-2">About</a></li>
+        <li><a href="merchant-application.html" class="block py-2">Apply</a></li>
+        <li><a href="contact.html" class="block py-2">Contact</a></li>
+      </ul>
+    </div>
   </header>
 
   <!-- Hero -->
@@ -39,39 +49,42 @@
     </div>
   </section>
 
-  <!-- Hero + Calculator -->
-  <section class="gradient-hero text-white py-24 px-6 text-center">
-    <div class="container mx-auto max-w-5xl">
-      <h1 class="text-5xl md:text-7xl font-bold mb-6">Stop Overpaying on Processing</h1>
-      <p class="text-2xl mb-12">See how much you’ll save with MCD Payments in 10 seconds</p>
+<!-- Calculator Section (Clean, No Hero Background) -->
+  <section id="calculator" class="py-24 px-6 bg-gray-50">
+    <div class="container mx-auto max-w-4xl text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">See How Much You’ll Save</h2>
+      <p class="text-xl text-muted-foreground mb-12">Enter your numbers below — takes 10 seconds</p>
 
-      <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 max-w-2xl mx-auto">
-        <form id="savings-calculator" class="space-y-6 text-left">
+      <div class="bg-white rounded-3xl shadow-2xl p-10 max-w-2xl mx-auto">
+        <form id="savings-calculator" class="space-y-8">
           <div>
-            <label class="text-lg block mb-2">Monthly Processing Volume ($)</label>
-            <input type="number" id="monthly-volume" placeholder="50,000" required class="w-full px-4 py-3 rounded-lg text-black text-xl">
+            <label class="block text-left text-lg font-medium mb-3">Monthly Processing Volume ($)</label>
+            <input type="number" id="monthly-volume" placeholder="50,000" required class="w-full px-6 py-4 rounded-xl border-2 border-gray-300 text-xl focus:border-accent focus:outline-none">
           </div>
           <div>
-            <label class="text-lg block mb-2">Current Total Fees ($)</label>
-            <input type="number" step="0.01" id="monthly-fees" placeholder="1,500" required class="w-full px-4 py-3 rounded-lg text-black text-xl">
+            <label class="block text-left text-lg font-medium mb-3">Current Total Fees ($)</label>
+            <input type="number" step="0.01" id="monthly-fees" placeholder="1,500" required class="w-full px-6 py-4 rounded-xl border-2 border-gray-300 text-xl focus:border-accent focus:outline-none">
           </div>
-          <button type="submit" class="w-full bg-accent text-white py-4 rounded-lg text-xl font-bold hover:bg-accent/90">Calculate Savings</button>
+          <button type="submit" class="w-full bg-accent text-white py-5 rounded-xl text-2xl font-bold hover:bg-accent/90 transition">Calculate My Savings</button>
         </form>
 
-        <div id="results-output" class="hidden mt-8 text-left space-y-4 bg-white/20 backdrop-blur p-8 rounded-2xl text-white">
-            <div class="text-xl">
-              <span class="font-bold">Your Current Effective Rate:</span> 
-              <span id="current-rate" class="text-4xl font-bold ml-2"></span>
+        <div id="results-output" class="hidden mt-10 p-8 bg-gradient-to-br from-accent/10 to-primary/10 rounded-2xl border-2 border-accent/30">
+          <div class="space-y-6 text-left">
+            <div>
+              <p class="text-lg font-medium text-gray-700">Your Current Effective Rate:</p>
+              <p id="current-rate" class="text-5xl font-bold text-primary"></p>
             </div>
-            <div class="text-xl">
-                <span class="font-bold">Estimated Monthly Savings with MCD:</span> 
-                <span id="monthly-savings" class="text-4xl font-bold text-green-300 ml-2"></span>
+            <div>
+              <p class="text-lg font-medium text-gray-700">Estimated Monthly Savings with MCD:</p>
+              <p id="monthly-savings" class="text-5xl font-bold text-green-600"></p>
             </div>
-            <div class="text-xl">
-               <span class="font-bold">Estimated Annual Savings:</span> 
-               <span id="annual-savings" class="text-4xl font-bold text-green-300 ml-2"></span>
+            <div>
+              <p class="text-lg font-medium text-gray-700">Estimated Annual Savings:</p>
+              <p id="annual-savings" class="text-6xl font-bold text-green-600"></p>
             </div>
+          </div>
         </div>
+      </div>
     </div>
   </section>
 
@@ -114,8 +127,10 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="calculator.js"></script>
 </body>
 
 </html>
+
 
 
