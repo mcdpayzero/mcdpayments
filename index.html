@@ -58,12 +58,20 @@
           <button type="submit" class="w-full bg-accent text-white py-4 rounded-lg text-xl font-bold hover:bg-accent/90">Calculate Savings</button>
         </form>
 
-        <div id="results-output" class="hidden mt-8 text-left space-y-4 bg-white/20 backdrop-blur p-6 rounded-xl">
-          <div><span class="font-bold">Your Current Rate:</span> <span id="current-rate" class="text-3xl font-bold"></span></div>
-          <div><span class="font-bold">Monthly Savings with MCD:</span> <span id="monthly-savings" class="text-3xl font-bold text-green-300"></span></div>
-          <div><span class="font-bold">Annual Savings:</span> <span id="annual-savings" class="text-3xl font-bold text-green-300"></span></div>
+        <div id="results-output" class="hidden mt-8 text-left space-y-4 bg-white/20 backdrop-blur p-8 rounded-2xl text-white">
+            <div class="text-xl">
+              <span class="font-bold">Your Current Effective Rate:</span> 
+              <span id="current-rate" class="text-4xl font-bold ml-2"></span>
+            </div>
+            <div class="text-xl">
+                <span class="font-bold">Estimated Monthly Savings with MCD:</span> 
+                <span id="monthly-savings" class="text-4xl font-bold text-green-300 ml-2"></span>
+            </div>
+            <div class="text-xl">
+               <span class="font-bold">Estimated Annual Savings:</span> 
+               <span id="annual-savings" class="text-4xl font-bold text-green-300 ml-2"></span>
+            </div>
         </div>
-      </div>
     </div>
   </section>
 
@@ -109,4 +117,5 @@
 </body>
 
 </html>
+
 
